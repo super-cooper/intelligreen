@@ -12,7 +12,7 @@
     <depends>com.intellij.modules.platform</depends>
 
     <actions>
-        <action id="SubmitPatch" class="intelligreen.actions.SubmitPatch" text="Submit Patch"
+        <action id="SubmitPatch" class="intelligreen.actions.SubmitPatch" text="Submit Evergreen Patch"
                 icon="IntelligreenIcons.SubmitPatch">
             <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
         </action>
