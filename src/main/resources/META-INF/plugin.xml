@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.github.super-cooper.intelligreen</id>
-    <name>intelligreen</name>
-    <vendor>super-cooper</vendor>
+    <name>Intelligreen</name>
+    <vendor email="adam@adamcooper.sh" url="https://github.com/super-cooper/intelligreen">Adam Cooper</vendor>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
