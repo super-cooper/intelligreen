@@ -1,8 +1,8 @@
-package com.github.super-cooper.intelligreen.listeners
+package com.adamcooper.intelligreen.listeners
 
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.project.ProjectManagerListener
-import com.github.super-cooper.intelligreen.services.MyProjectService
+import com.adamcooper.intelligreen.services.MyProjectService
 
 internal class MyProjectManagerListener : ProjectManagerListener {
 

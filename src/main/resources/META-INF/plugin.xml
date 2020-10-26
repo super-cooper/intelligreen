@@ -1,19 +1,19 @@
 <idea-plugin>
-    <id>com.github.super-cooper.intelligreen</id>
+    <id>com.adamcooper.intelligreen</id>
     <name>Intelligreen</name>
-    <vendor email="adam@adamcooper.sh" url="https://github.com/super-cooper/intelligreen">Adam Cooper</vendor>
+    <vendor email="adam@adamcooper.sh" url="https://github.com/cooper/intelligreen">Adam Cooper</vendor>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.super-cooper.intelligreen.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.super-cooper.intelligreen.services.MyProjectService"/>
+        <applicationService serviceImplementation="com.adamcooper.intelligreen.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.adamcooper.intelligreen.services.MyProjectService"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.super-cooper.intelligreen.listeners.MyProjectManagerListener"
+        <listener class="com.adamcooper.intelligreen.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
 </idea-plugin>

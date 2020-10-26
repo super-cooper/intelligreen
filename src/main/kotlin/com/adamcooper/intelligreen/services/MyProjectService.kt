@@ -1,7 +1,7 @@
-package com.github.super-cooper.intelligreen.services
+package com.adamcooper.intelligreen.services
 
 import com.intellij.openapi.project.Project
-import com.github.super-cooper.intelligreen.MyBundle
+import com.adamcooper.intelligreen.MyBundle
 
 class MyProjectService(project: Project) {
 
