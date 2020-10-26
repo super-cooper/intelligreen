@@ -1,13 +1,14 @@
-package com.adamcooper.intelligreen
+package intelligreen
 
 import com.intellij.AbstractBundle
+import com.intellij.openapi.util.IconLoader
 import org.jetbrains.annotations.NonNls
 import org.jetbrains.annotations.PropertyKey
 
 @NonNls
-private const val BUNDLE = "messages.MyBundle"
+private const val BUNDLE = "messages.IntelligreenResourceBundle"
 
-object MyBundle : AbstractBundle(BUNDLE) {
+object IntelligreenResourceBundle : AbstractBundle(BUNDLE) {
 
     @Suppress("SpreadOperator")
     @JvmStatic

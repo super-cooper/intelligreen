@@ -3,17 +3,23 @@
     <name>Intelligreen</name>
     <vendor email="adam@adamcooper.sh" url="https://github.com/cooper/intelligreen">Adam Cooper</vendor>
 
+    <description><![CDATA[
+    Integrates the IntelliJ platform with MongoDB's Evergreen CI system.
+    ]]></description>
+
     <!-- Product and plugin compatibility requirements -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.adamcooper.intelligreen.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.adamcooper.intelligreen.services.MyProjectService"/>
-    </extensions>
+    <actions>
+        <action id="SubmitPatch" class="intelligreen.actions.SubmitPatch" text="Submit Patch"
+                icon="IntelligreenIcons.SubmitPatch">
+            <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
+        </action>
+    </actions>
 
-    <applicationListeners>
-        <listener class="com.adamcooper.intelligreen.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="intelligreen.services.IntelligreenApplicationService"/>
+        <projectService serviceImplementation="intelligreen.services.IntelligreenProjectService"/>
+    </extensions>
 </idea-plugin>
