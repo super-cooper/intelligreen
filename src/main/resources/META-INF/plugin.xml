@@ -21,5 +21,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="intelligreen.services.IntelligreenApplicationService"/>
         <projectService serviceImplementation="intelligreen.services.IntelligreenProjectService"/>
+        <toolWindow id="Evergreen" icon="IntelligreenIcons.ToolWindow" anchor="bottom"
+                    factoryClass="intelligreen.extensions.toolwindow.IntelligreenToolWindowFactory"/>
     </extensions>
 </idea-plugin>
